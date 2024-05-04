@@ -85,11 +85,16 @@ body * {
 
   top: 50%;
   transform: translateY(-50%);
+
+  animation: slide-off 0.5s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 .lightMode #switch button {
-  left: initial;
-  right: 0;
+  animation: slide-on 0.5s forwards;
 }
 
 #switch span {
@@ -177,5 +182,25 @@ footer {
 
   .lightMode {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* animations */
+
+@keyframes slide-on {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-off {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
