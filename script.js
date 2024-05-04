@@ -16,14 +16,14 @@ function toggleMode() {
     img.setAttribute("src", "./assets/avatar-light.png")
     img.setAttribute(
       "alt",
-      "Foto do Mayk Brito sorrindo, de óculos e barba com fundo amarelo."
+      "Foto do Mayk Brito de óculos escuros com fundo roxo e azul."
     )
   } else {
     // se não, adicionar avatar.png
     img.setAttribute("src", "./assets/avatar.png")
     img.setAttribute(
       "alt",
-      "Foto do Mayk Brito de óculos escuros com fundo roxo e azul."
+      "Foto do Mayk Brito sorrindo, de óculos e barba com fundo amarelo."
     )
   }
 }
